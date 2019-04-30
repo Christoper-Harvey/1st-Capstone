@@ -1,4 +1,4 @@
-This is the model
+This is the model description. For operation instructions please open the 'Run Instructions.md' file
 
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/model.png" >
 

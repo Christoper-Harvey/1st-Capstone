@@ -100,3 +100,44 @@ MS Standard
 
 As you can see the Dumb ones are VERY unstable!!! So much so they couldn't even create a bad model. It was just random noise. The rest follow a pretty straightforward path. The more intelliegnt the model becomes the less updates it needs to create the same shape. We want a nice stable curve downward that will eventually level off and maybe only spike downward one or two more times if the creativity of the agent creates a 'boom' in knowledge not before discovered.
 
+For this project I wanted to tackle Reinforcement learning and AI. The question I wanted to answer was “Can I make an AI that plays better than humans without doing any feature engineering or AI design?”
+
+The answer to this question was YES!!!
+
+Using state of the art techniques in reinforcement learning, I created a model that learns how to play any perfect knowledge game better than human play in a fraction of the time it would take to create this AI by hand. I researched Alpha Zero from DeepMind. I created a working replica of their original methodology. I first trained it on Tic Tac Toe, TTT, as I do not have the computational power to train an agent on chess! I achieved super human level of play in Connect 4 after only 16 hours of training! The data it trains on is all self generated. The only coding I needed to do was to create the model, define the types and number of players, and to create a game environment. Everything else was done for me by the model. All of it’s behaviour, it’s strategy, it’s knowledge, and it's intelligence was created by the model.
+
+In doing this I found out that scale and complexity of the model effects how strong the model is.
+Its training variables are:
+Memory Size - The amount of data the model can hold in its system at any point in time.
+Episodes - The number of training games played before an update to the model.
+MCTS Sims - The amount of Sims or Q-depth of the tree search.
+Epsilon - The % of time the agent will select random moves during a training session.
+Alpha - The discount factor of the agent.
+Batch Size - This is the batch size for the learning update. Standard supervised learning.
+Learning Rate - Same as above. Learning Rate for update.
+Momentum - Same as above. Momentum for Learning Rate update.
+Training Loops - The amount of times the model is updated during update.
+Scoring Threshold - The % of games needed to win to create a new generation.
+Eval Episodes - The number of games in the learning tournament.
+Tau - The number of turns a model will play randomly before the MCTS turns on.
+
+I found out which attributes of the model leads to the greatest success and how to adjust them accordingly. I focused on MCTS Sims, Memory Size, and Episodes as these effect how large and complex the model is the most. Making the Q-depth larger makes training time increase almost exponentially. It also affects how complex the model is the most. Memory Size is the second most important factor in strength of a model as it decides how much the model can know at any given time. Episodes is how much 'data' or the number of games played in each training block is sent to update the model. Having a large number of games without an update creates a very data rich update but can also make an unstable update as there is so much updated that the model may be too different from its past.
+
+The data that is needed for this is very small and very much unlike normal machine learning. ALL data is self-generated and there is no prior knowledge needed for AI to learn from the games they are in. They learn like humans and adjust to each new environment they are in; given they have sufficient resources. This lets us train every new agent in a way that is unique to the game they live in. You could also transfer over knowledge from similar games to have the agent learn from a starting position. This will create a strange but useful AI where not all of its tendencies and knowledge come from the world it lives in so it's a little unpredictable.
+
+The agent took 5 hours to train a Tic Tac Toe agent running on my personal gtx 1080 graphics card. It learned how to play the game using a Monte Carlo Tree Search, MCTS, which learns from experience. It also used an Actor Critic model with a residual CNN as the Critic and a MCTS powered ResNet as the Actor.
+Each generation of model makes large steps forward. After only 3 generations of TTT models the agent mastered the game and played perfectly no matter what the opponent does. I call this a 'Solved Model' because TTT and C4 are 'Solved' games meaning that humans have mathematically came up with a solution to the game to where is both players played perfectly it would result in this every time. TTT's solved state is a draw. C4's solved state is player 1 winning. So I knew the model achieved complete success when they followed the perfect game almost every time.
+
+I can create a model that plays consistently far above human level in only 10-30 hours depending on complexity of the game being played. I tried this approach on 3 different games and achieved success on all of them at multiple levels of scale.
+I created 4 types of TTT and C4 models: Dumb - Q-depth of 2, low memory, and HIGH episodes 100 or more. Semi-Dumb - Q-depth of 10, very high memory, 20 episodes. Standard - Q-depth of 50, high memory, 30 episodes. Smart - Q-depth of 1000, medium memory, 10 episodes.
+Using the standard as the benchmark I compared each model in a tournament on their own domains. In C4 the dumb model couldn't even create a stable model. Each generation was the same as the past but since the model acted randomly sometimes that would determine if a new generation was created as one player would win past the threshold more than the other. The semi dumb model did actually create a stable model but was generally weaker under all circumstances then the smart and standard versions.
+The competition between standard and smart is close though. Because each generation of the smart model took 20-26 hours to make I only made 10 versions of it. Compared to the 26 of the standard version or the 700 of the dumb version. Comparing versions 10 of the smart and 26 of the standard the matches are almost even. If you compare 10 of both it is very one-sided, smart wins every time.
+This leads me to believe that scale has a huge effect on Reinforcement learning and the larger the scale of the model you can create the better the results will be.
+ 
+I am confident that we can use this approach on new AAA games to make lifelike AI that plays as good or better then humans for us to play against. Saving millions every year for major studios while also making it possible to increase the scale of indie games. Adding in real feeling AI will also make games feel more immersive in single player games and more challenging in Massive Multiplayer games. Imagine a game like titanfall with hundreds of unique and different AIs to play with or MMOs that give everyone supporters that act like real humans and come up with their own strategies to attack bosses and clear missions.
+
+This could lead to a revolution in how we design and make games. It could impower game devs to be able to make new and interesting takes on AI that will make our gaming experience more unique to the worlds we play in. Imagine an AI recognizing patterns in fighting games and adjusting to them, or enemies truly seeing clues and suspicious things in stealth games to better search for the player. This will make AI feel like they are real and apart of the worlds that they live in.
+
+This also has implications in non gaming ways. Agents that can learn from only having an environment and controls could learn to walk, ride a bike, trade stocks, cook, clean, put books away in a library, take care of animals, or even how to use chopsticks!!! All while having an innate understanding of ‘How?’ and ‘Why?’ they are doing what they are doing that they came up with themselves to understand their lives.
+
+We could use this technology to better the lives of every human by creating ‘Games’ for AI to play and master that can help us do anything from everyday chores to solving global crisis such as global warming, poverty, food and water shortages. The reaches of AI and reinforcement learning are endless and it will lead us to a better future. I just hope that my work and ideas will help power that future in some way for the better.
