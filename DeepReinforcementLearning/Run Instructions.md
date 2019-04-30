@@ -16,6 +16,8 @@ When you are ready to run, open up the 'train.ipynb' and if you are using gpu ru
 
 The last two commands are to see the layers of the ConvResNet and to output a diagram of it.
 
+To start the training process from a past starting point put in the version of the model, memory, and run number into the 'run_archive' folder. Then edit the file 'initialize.py' as stated in the file.
+
 When you have versions of the game you want to compete or if you want to compete my versions. Open the 'test.ipynb' file and run the first command then edit the second command as follows:
 
 env = Game()
