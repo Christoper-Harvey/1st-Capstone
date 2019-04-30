@@ -63,28 +63,37 @@ This leads me to believe that scale has a huge effect on Reinforcement learning 
 Here is the loss graph of each model in order from TTT dumb-Smart, C4 dumb-smart, and MS standard.
 
 TTT Dumb
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/dumb/ttt_dmb2_IterationsOverTime.png" >
 
 TTT Semi-Dumb
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/semi%20dumb/ttt_smd_IterationsOverTime.png" >
 
 TTT Standard
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/standard/ttt_std2_IterationsOverTime.png" >
 
 TTT Smart
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/smart/ttt_smt2_IterationsOverTime.png" >
 
 C4 Dumb
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/dumb/c4_dmb3_IterationsOverTime.png" >
 
 C4 Semi-Dumb
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/semi%20dumb/c4_smd2_IterationsOverTime.png" >
 
 C4 Standard
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/standard/c4_std_IterationsOverTime.png" >
 
 C4 Smart
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/smart/c4_smt2_IterationsOverTime.png" >
 
 MS Standard
+
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/metasquares/standard/ms_std_IterationsOverTime.png" >
