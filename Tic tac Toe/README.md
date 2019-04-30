@@ -1,0 +1,1 @@
+To train this type of agent replace the 'game.py' file in the 'DeepReinforcementLearning' with this 'game.py' file. That will change the game. then simply run the commands in 'train.ipynb' and the agent will start training with the current config setup. To change the setup open both'config.py' files in a text editor and change whatever settings you wish.
