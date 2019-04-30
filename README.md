@@ -97,3 +97,6 @@ C4 Smart
 MS Standard
 
 <img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/metasquares/standard/ms_std_IterationsOverTime.png" >
+
+As you can see the Dumb ones are VERY unstable!!! So much so they couldn't even create a bad model. It was just random noise. The rest follow a pretty straightforward path. The more intelliegnt the model becomes the less updates it needs to create the same shape. We want a nice stable curve downward that will eventually level off and maybe only spike downward one or two more times if the creativity of the agent creates a 'boom' in knowledge not before discovered.
+
