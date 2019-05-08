@@ -121,3 +121,7 @@ This could lead to a revolution in how we design and make games. It could impowe
 This also has implications in non gaming ways. Agents that can learn from only having an environment and controls could learn to walk, ride a bike, trade stocks, cook, clean, put books away in a library, take care of animals, or even how to use chopsticks!!! All while having an innate understanding of ‘How?’ and ‘Why?’ they are doing what they are doing that they came up with themselves to understand their lives.
 
 We could use this technology to better the lives of every human by creating ‘Games’ for AI to play and master that can help us do anything from everyday chores to solving global crisis such as global warming, poverty, food and water shortages. The reaches of AI and reinforcement learning are endless and it will lead us to a better future. I just hope that my work and ideas will help power that future in some way for the better.
+
+If you want to contact me feel free to message me on linkedin or email me at chris.harvey0248@yahoo.com! I'm always up for suggestions on how to improve my models and code!
+
+https://www.linkedin.com/in/christopher-harvey-0a0304167/
