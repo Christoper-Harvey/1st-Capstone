@@ -7,7 +7,7 @@ For this project I wanted to tackle Reinforcement learning and AI. The questions
 3) How does scale affect learning in an agent?
 
 4) Can I make an AI that plays better than humans without doing any feature engineering or AI design?
-
+teast
 
 To answer the first question I researched Alpha Zero from DeepMind. I created a working replica of there original methodology. Using state of the art techniques in reinforcement learning, I created a model that learns how to play any perfect knowledge game better than humans in a fraction of the time it would take to create this AI by hand. I first trained it on Tic Tac Toe, TTT, as I do not have the computational power to train an agent on chess! The agent took 5 hours to train running on my personal gtx 1080 graphics card.
 
