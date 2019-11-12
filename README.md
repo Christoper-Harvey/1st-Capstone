@@ -80,7 +80,7 @@ TTT Semi-Dumb
 
 TTT Standard
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/standard/ttt_std2_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/standard/ttt_std2_IterationsOverTime.png" >
 
 TTT Smart
 
