@@ -1,3 +1,19 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:af0196925846c3fdc65d2f03095626a52fdb1f5bc73142d2907c25448a278257
-size 460
+# not sure if the best method of a loss function and would like help with this
+import tensorflow as tf
+
+def softmax_cross_entropy_with_logits(y_true, y_pred):
+
+	p = y_pred
+	pi = y_true
+
+	zero = tf.zeros(shape = tf.shape(pi), dtype=tf.float32)
+	where = tf.equal(pi, zero)
+
+	negatives = tf.fill(tf.shape(pi), -100.0) 
+	p = tf.where(where, negatives, p)
+
+	loss = tf.nn.softmax_cross_entropy_with_logits(labels = pi, logits = p)
+
+	return loss
+
+

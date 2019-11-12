@@ -1,3 +1,12 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:03e72f2899e7ae62360198b92406a0819049c2bc8815d6f79e0ff646da889665
-size 513
+'''
+Import versions from the run folder if loading saved model. Create a run_archive folder with the same layout as run and add in the files you want to load from. do not use .py extensions
+
+e.g. INITIAL_RUN_NUMBER = 0001
+     INITIAL_MODEL_VERSION = 0005
+     INITIAL_MEMORY_VERSION = 0130
+For running a new run saved at "run0001" using the model 5th gen model and having the memory from the 130th iteration.
+'''
+
+INITIAL_RUN_NUMBER = None
+INITIAL_MODEL_VERSION = None
+INITIAL_MEMORY_VERSION =  None

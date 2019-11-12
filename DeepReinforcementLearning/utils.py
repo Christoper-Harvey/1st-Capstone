@@ -1,3 +1,16 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:22f706e683db123879a8afdbee9d243c565bc410385b03f0d5f3b467347f811b
-size 399
+
+import logging
+
+def setup_logger(name, log_file, level=logging.INFO):
+
+    formatter = logging.Formatter('%(asctime)s %(levelname)s %(message)s')
+
+    handler = logging.FileHandler(log_file)        
+    handler.setFormatter(formatter)
+
+    logger = logging.getLogger(name)
+    logger.setLevel(level)
+    if not logger.handlers:
+        logger.addHandler(handler)
+
+    return logger
