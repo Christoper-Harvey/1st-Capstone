@@ -38,6 +38,7 @@ Overall high scale models that are on their own domain will be better then gener
 To answer the third question I adjusted the training variables to make a larger scale of learning and computation that the model can do every update.
 
 Its training variables are:
+
 Memory Size - The amount of data the model can hold in its system at any point in time.
 Episodes - The number of training games played before an update to the model.
 MCTS Sims - The amount of Sims or Q-depth of the tree search.
