@@ -17,7 +17,7 @@ It learned how to play the game using a Monte Carlo Tree Search, MCTS, which lea
 
 This is what the error for the model over time looked like.
 
-<img src="https://raw.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/standard/ttt_std2_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/standard/ttt_std2_IterationsOverTime.png" >
 
 As you can see it reduces quickly then levels out. This is a fairly stable result. Doing the same for Connect 4, and MetaSquares I am sure that the agent learned generalities and strategy for each game and quickly surpased human level performance.
 
@@ -72,11 +72,11 @@ Here is the loss graph of each model in order from TTT dumb-Smart, C4 dumb-smart
 
 TTT Dumb
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/dumb/ttt_dmb2_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/dumb/ttt_dmb2_IterationsOverTime.png" >
 
 TTT Semi-Dumb
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/semi%20dumb/ttt_smd_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/semi%20dumb/ttt_smd_IterationsOverTime.png" >
 
 TTT Standard
 
@@ -84,27 +84,27 @@ TTT Standard
 
 TTT Smart
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/smart/ttt_smt2_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/smart/ttt_smt2_IterationsOverTime.png" >
 
 C4 Dumb
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/dumb/c4_dmb3_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Connect%204/dumb/c4_dmb3_IterationsOverTime.png" >
 
 C4 Semi-Dumb
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/semi%20dumb/c4_smd2_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Connect%204/semi%20dumb/c4_smd2_IterationsOverTime.png" >
 
 C4 Standard
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/standard/c4_std_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Connect%204/standard/c4_std_IterationsOverTime.png" >
 
 C4 Smart
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Connect%204/smart/c4_smt2_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/Connect%204/smart/c4_smt2_IterationsOverTime.png" >
 
 MS Standard
 
-<img src="https://media.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/metasquares/standard/ms_std_IterationsOverTime.png" >
+<img src="https://raw.githubusercontent.com/Christoper-Harvey/1st-Capstone/master/metasquares/standard/ms_std_IterationsOverTime.png" >
 
 As you can see the Dumb ones are VERY unstable!!! So much so they couldn't even create a bad model. It was just random noise. The rest follow a pretty straightforward path. The more intelliegnt the model becomes the less updates it needs to create the same shape. We want a nice stable curve downward that will eventually level off and maybe only spike downward one or two more times if the creativity of the agent creates a 'boom' in knowledge not before discovered.
 
