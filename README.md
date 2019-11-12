@@ -17,8 +17,6 @@ It learned how to play the game using a Monte Carlo Tree Search, MCTS, which lea
 
 This is what the error for the model over time looked like.
 
-[ttt_std2_IOT](Tic tac Toe/standard/ttt_std2_IterationsOverTime.png)
-
 <img src="https://raw.githubusercontent.com/media/Christoper-Harvey/1st-Capstone/master/Tic%20tac%20Toe/standard/ttt_std2_IterationsOverTime.png" >
 
 As you can see it reduces quickly then levels out. This is a fairly stable result. Doing the same for Connect 4, and MetaSquares I am sure that the agent learned generalities and strategy for each game and quickly surpased human level performance.
