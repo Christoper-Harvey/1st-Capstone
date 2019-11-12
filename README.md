@@ -37,22 +37,35 @@ Overall high scale models that are on their own domain will be better then gener
 
 To answer the third question I adjusted the training variables to make a larger scale of learning and computation that the model can do every update.
 
+
 Its training variables are:
 
 Memory Size - The amount of data the model can hold in its system at any point in time.
+
 Episodes - The number of training games played before an update to the model.
+
 MCTS Sims - The amount of Sims or Q-depth of the tree search.
+
 Epsilon - The % of time the agent will select random moves during a training session.
+
 Alpha - The discount factor of the agent.
+
 Batch Size - This is the batch size for the learning update. Standard supervised learning.
+
 Learning Rate - Same as above. Learning Rate for update.
+
 Momentum - Same as above. Momentum for Learning Rate update.
+
 Training Loops - The amount of times the model is updated during update.
+
 Scoring Threshold - The % of games needed to win to create a new generation.
+
 Eval Episodes - The number of games in the learning tournament.
+
 Tau - The number of turns a model will play randomly before the MCTS turns on.
 
 Adjusting these will lead to wildly new results during training. You can also adjust these during tournament play to affect each model's performance.
+
 
 I focused on MCTS Sims, Memory Size, and Episodes as these affect how large and complex the model is the most. Making the Q-depth larger makes training time increase almost exponentailly. It also effects how complex the model is the most. Memory Size is the second most important factor in strength of a model as it decides how much the model can know at any given time. Episodes is how much 'data' or the number of games played in each training block is sent to update the model. Having a large number of games without an update creates a very data rich update but can also make it an unstable update as there is so much updated that the model may be too different from its past.
 
